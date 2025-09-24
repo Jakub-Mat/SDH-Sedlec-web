@@ -1,0 +1,119 @@
+body {
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  color: #111;
+  margin-inline: 0;
+}
+
+#root {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #111;
+}
+
+.main-header {
+  width: 100vw;
+  min-width: 100vw;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  background: #990000;
+  padding: 0 32px;
+  height: 70px;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+main {
+  max-width: 70vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.logo-container {
+  margin-right: 32px;
+}
+
+.header-logo {
+  height: 48px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 24px;
+  flex: 1;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.nav-link:hover {
+  background: #b30000;
+}
+
+.login-link {
+  background: #ffd600;
+  color: #990000;
+  font-weight: bold;
+  margin-left: 24px;
+}
+
+.login-link:hover {
+  background: #ffe066;
+}
+
+.sdh-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.sdh-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 120px;
+}
+
+.sdh-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 8px;
+}
+
+.sdh-icon.red {
+  color: #b30000;
+}
+
+.sdh-icon.blue {
+  color: #1976d2;
+}
+
+.sdh-stat-label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #222;
+  margin-top: 4px;
+}
+
+.sdh-divider {
+  width: 2px;
+  height: 60px;
+  background: #ddd;
+  margin: 0 16px;
+}
