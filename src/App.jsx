@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
-import redFiretruck from './assets/RedFiretruck.svg'
-import blueDiversity from './assets/BlueDiversity.svg'
-import redFirefighter from './assets/RedFirefighters.svg' 
+import redFiretruck from './assets/svg/RedFiretruck.svg'
+import blueDiversity from './assets/svg/BlueDiversity.svg'
+import redFirefighter from './assets/svg/RedFirefighters.svg'
+import sdhLogo from "./assets/pictures/ZnakSDHSedleccropped.png"
 
 // Přidej Material Symbols font do index.html nebo použij CDN v <head>:
 // <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
@@ -13,7 +14,7 @@ function App() {
     <>
       <header className="main-header">
         <div className="logo-container">
-          <img src={reactLogo} alt="Logo SDH" className="header-logo" />
+          <img src={sdhLogo} alt="Logo SDH" className="header-logo" />
         </div>
         <nav className="nav-menu">
           <a href="#" className="nav-link">Domů</a>
