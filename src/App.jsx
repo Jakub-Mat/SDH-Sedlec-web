@@ -53,6 +53,18 @@ function App() {
           <p>
             Přehled plánovaných akcí, soutěží a událostí.
           </p>
+          <iframe 
+            title="calendar" 
+            // style="border: 0" width="00" height="600" frameborder="0" scrolling="no"
+            src="https://calendar.google.com/calendar/embed?src=jacobsprogramms%40gmail.com&ctz=Europe%2FPrague" 
+            style={{
+              width: "800px",
+              height: "600px",
+              border: "none",
+              marginTop: "16px",
+              scrollBehavior: "no"
+            }}
+          ></iframe>
         </section>
       </main>
     </>
