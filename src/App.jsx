@@ -5,6 +5,9 @@ import redFiretruck from './assets/svg/RedFiretruck.svg'
 import blueDiversity from './assets/svg/BlueDiversity.svg'
 import redFirefighter from './assets/svg/RedFirefighters.svg'
 import sdhLogo from "./assets/pictures/ZnakSDHSedleccropped.png"
+import instagram from "./assets/svg/ig-instagram-icon.svg"
+import facebook from "./assets/svg/facebook-square-icon.svg"
+// import tiktok from "./assets/svg/tiktok.svg"
 
 // Přidej Material Symbols font do index.html nebo použij CDN v <head>:
 // <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
@@ -28,8 +31,11 @@ function App() {
       <main>
         <section className="section-white">
           <h1>O SDH Sedlec</h1>
+          <h2>Vítejte na novém officálním webu SDH Sedlec</h2>
           <p>
-            Zde bude základní popis vašeho hasičského sboru, historie, poslání a další informace.
+            Hasičský sport je disciplína, která vyžaduje nejen fyzickou sílu a obratnost, ale také pevné odhodlání, týmovou spolupráci a neochvějnou odvahu.
+            Hasiči se v něm učí dovednostem, které mohou v reálném životě zachránit lidské životy, a každým tréninkem posouvají své limity.
+            Vážíme si každého člena hasičského sboru nejen pro jejich nasazení ve sportu, ale především pro jejich obětavou práci, díky které zajišťují bezpečí a ochranu pro nás všechny.
           </p>
           <div className="sdh-stats">
             <div className="sdh-stat">
@@ -49,24 +55,55 @@ function App() {
           </div>
         </section>
         <section className="section-red">
-          <h2>Kalendář událostí</h2>
+          <h1>Kalendář událostí</h1>
           <p>
             Přehled plánovaných akcí, soutěží a událostí.
           </p>
           <iframe 
             title="calendar" 
             // style="border: 0" width="00" height="600" frameborder="0" scrolling="no"
+            className='calendar-iframe'
             src="https://calendar.google.com/calendar/embed?src=jacobsprogramms%40gmail.com&ctz=Europe%2FPrague" 
-            style={{
-              width: "800px",
-              height: "600px",
-              border: "none",
-              marginTop: "16px",
-              scrollBehavior: "no"
-            }}
           ></iframe>
         </section>
       </main>
+      <footer className="footer">
+        <div className="footer-content">
+          <div className="footer-section">
+            <h3>Kde nás sledovat?</h3>
+            <div className="social-icons">
+              <a href="https://www.facebook.com" className="social-icon">
+                <img src={facebook} alt="Facebook" className="social-icon-img" />
+              </a>
+              <a href="https://www.instagram.com" className="social-icon">
+                <img src={instagram} alt="Instagram" className="social-icon-img" />
+              </a>
+              <a href="#" className="social-icon">🎵</a> {/* TikTok ikona může být přidána později */}
+            </div>
+          </div>
+          <div className="footer-section">
+            <h3>Adresa:</h3>
+            <p>SHČMS - SDH Sedlec</p>
+            <p>Tymákovská 239</p>
+            <p>332 02 Sedlec</p>
+          </div>
+          <div className="footer-section">
+            <h3>E-mail:</h3>
+            <p>info@hasicisedlec.cz</p>
+            <p>topOddil@hasicisedlec.cz</p>
+          </div>
+          <div className="footer-section">
+            <h3>IČO:</h3>
+            <p>12431534713</p>
+          </div>
+          <div className="footer-section">
+            <h3>Telefon:</h3>
+            <p>155 158 150</p>
+            <p>757 344 971</p>
+            <p>279 974 634</p>
+          </div>
+        </div>
+      </footer>
     </>
   )
 }

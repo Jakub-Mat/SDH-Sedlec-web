@@ -35,8 +35,8 @@ main {
   align-items: center;
   justify-content: space-between; /* Změněno z center na space-between */
   background: #990000;
-  padding: 0 32px;
-  height: 70px;
+  padding: 0 100px;
+  height: 10vh;
   margin: 0;
   position: relative;
   top: 0;
@@ -49,12 +49,13 @@ main {
 }
 
 .header-logo {
-  height: 7vh;
+  height: 10vh;
+  width: auto;
 }
 
 .nav-menu {
   display: flex;
-  justify-content: center;
+  justify-content: right;
   gap: 24px;
   width: 100%; /* Přidáno pro roztažení přes celý header */
 }
@@ -62,7 +63,7 @@ main {
 .nav-link {
   color: #fff;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   padding: 8px 16px;
   border-radius: 4px;
   transition: 0.2s;
@@ -125,4 +126,23 @@ main {
   height: 60px;
   background: #ddd;
   margin: 0 16px;
+}
+
+.calendar-iframe{
+  width: 1200px;
+  height: 800px;
+  border: none;
+  margin-top: 16px;
+  margin-bottom: 32px;
+  scroll-behavior: unset;
+}
+
+.social-icon-img {
+  width: 32px; /* Nastavení velikosti ikony */
+  height: 32px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icon-img:hover {
+  transform: scale(1.2); /* Zvýraznění při najetí myší */
 }
