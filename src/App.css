@@ -61,6 +61,7 @@ main {
 }
 
 .nav-link {
+  font-weight: 500;
   color: #fff;
   text-decoration: none;
   font-size: 1.5rem;
@@ -69,9 +70,20 @@ main {
   transition: 0.2s;
 }
 
-.nav-link:hover {
-  background: #b30000;
+#activeCard.nav-link {
   text-decoration: underline;
+  text-decoration-color: #fff8f0; /* Nastavení méně výrazné barvy podtržení */
+}
+
+#activeCard.nav-link:hover {
+  text-decoration: underline;
+  text-decoration-color: #ffdd57; /* Nastavení méně výrazné barvy podtržení */
+}
+
+.nav-link:hover {
+  /* background: #b30000; */
+  text-decoration: underline;
+  text-decoration-color: #ffdd57; /* Nastavení méně výrazné barvy podtržení */
 }
 
 .login-link {
@@ -83,6 +95,8 @@ main {
 
 .login-link:hover {
   background: #ffe066;
+  text-decoration: underline;
+  text-decoration-color: #990000; /* Nastavení méně výrazné barvy podtržení */
 }
 
 .sdh-stats {

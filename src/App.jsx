@@ -14,6 +14,7 @@ import facebook from "./assets/svg/facebook-square-icon.svg"
 
 function App() {
   const [menuActive, setMenuActive] = useState(false);
+  
 
   const toggleMenu = () => {
     setMenuActive(!menuActive);
@@ -29,7 +30,7 @@ function App() {
           ☰
         </button>
         <nav className={`nav-menu ${menuActive ? 'active' : ''}`}>
-          <a href="#home" className="nav-link">Home</a>
+          <a href="#home" className="nav-link" id="activeCard">Home</a>
           <a href="#about" className="nav-link">About</a>
           <a href="#contact" className="nav-link">Contact</a>
           <a href="#login" className="nav-link login-link">Login</a>
