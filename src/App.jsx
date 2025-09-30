@@ -13,19 +13,26 @@ import facebook from "./assets/svg/facebook-square-icon.svg"
 // <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
 function App() {
+  const [menuActive, setMenuActive] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuActive(!menuActive);
+  };
+
   return (
     <>
       <header className="main-header">
         <div className="logo-container">
-          <img src={sdhLogo} alt="Logo SDH" className="header-logo" />
+          <img src={sdhLogo} alt="Logo" className="header-logo" />
         </div>
-        <nav className="nav-menu">
-          <a href="#" className="nav-link">Domů</a>
-          <a href="#" className="nav-link">Materiály</a>
-          <a href="#" className="nav-link">Členové</a>
-          <a href="#" className="nav-link">Výbava</a>
-          <a href="#" className="nav-link">Kronika</a>
-          <a href="#" className="nav-link login-link">Přihlášení</a>
+        <button className="menu-toggle" onClick={toggleMenu}>
+          ☰
+        </button>
+        <nav className={`nav-menu ${menuActive ? 'active' : ''}`}>
+          <a href="#home" className="nav-link">Home</a>
+          <a href="#about" className="nav-link">About</a>
+          <a href="#contact" className="nav-link">Contact</a>
+          <a href="#login" className="nav-link login-link">Login</a>
         </nav>
       </header>
       <main>

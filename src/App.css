@@ -71,6 +71,7 @@ main {
 
 .nav-link:hover {
   background: #b30000;
+  text-decoration: underline;
 }
 
 .login-link {
@@ -131,6 +132,10 @@ main {
 .calendar-iframe{
   width: 1200px;
   height: 800px;
+  max-width: 100%;
+  max-height: 100vh;
+  min-width: max-content;
+  min-height: fit-content;
   border: none;
   margin-top: 16px;
   margin-bottom: 32px;
@@ -145,4 +150,102 @@ main {
 
 .social-icon-img:hover {
   transform: scale(1.2); /* Zvýraznění při najetí myší */
+}
+/* Responsibilní část */
+
+/* Media query pro šířku menší než 1200px */
+@media (max-width: 1200px) {
+  .main-header {
+    flex-direction: column; /* Uspořádání obsahu vertikálně */
+    height: auto; /* Automatická výška */
+    padding: 16px; /* Přidání paddingu */
+  }
+
+  .nav-menu {
+    display: none; /* Skrytí navigačního menu */
+    flex-direction: column; /* Vertikální zobrazení položek */
+    gap: 16px; /* Mezera mezi položkami */
+    background: #990000; /* Barva pozadí menu */
+    position: absolute;
+    top: 100%; /* Pod headerem */
+    left: 0;
+    width: 100%; /* Roztažení přes celou šířku */
+    padding: 16px 0;
+    z-index: 999; /* Zajištění, že menu bude nad ostatními prvky */
+  }
+
+  .nav-menu.active {
+    display: flex; /* Zobrazení menu při aktivaci */
+  }
+
+  .menu-toggle {
+    display: flex; /* Zobrazení tlačítka */
+    justify-content: center;
+    align-items: center;
+    background: #990000;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s;
+  }
+
+  .menu-toggle:hover {
+    background: #b30000;
+  }
+
+  .logo-container {
+   display: none; /* Skrytí loga na větších obrazovkách */
+  }
+}
+
+@media (min-width: 1200px) {
+  .menu-toggle {
+    display: none; /* Skrytí tlačítka na větších obrazovkách */
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+}
+
+@media (max-width: 800px) {
+  /* Zmenšení zápatí */
+  .footer-content {
+    flex-direction: column; /* Vertikální uspořádání */
+    align-items: center; /* Centrování obsahu */
+    font-size: 1.rem; /* Zmenšení velikosti písma */
+  }
+
+  .footer-section {
+    margin: 0; /* Zvýšení mezery mezi sekcemi */
+    text-align: center; /* Centrovaný text */
+  }
+
+  .footer-section h3 {
+    font-size: 1.2rem; /* Zmenšení velikosti nadpisů */
+    margin: 0 0 8px 0;
+    padding: 0;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .sdh-stats {
+    flex-direction: column; /* Vertikální uspořádání */
+    gap: 16px; /* Mezera mezi položkami */
+  }
+
+  .sdh-divider {
+    display: none; /* Skrytí dělící čáry */
+  }
+
+  .calendar-iframe {
+    width: 100%; /* Plná šířka */
+    height: 600px; /* Výška přizpůsobená menším obrazovkám */
+  }  
+
 }
