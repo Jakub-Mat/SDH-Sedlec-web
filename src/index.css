@@ -31,7 +31,7 @@ body{
 
 h1 {
   color: #990000; /* Nastavení barvy textu */
-  text-decoration: underline; /* Podtržení textu */
+  text-decoration: solid; /* Podtržení textu */
   font-size: 1.8rem; /* Zmenšení velikosti textu */
 }
 
