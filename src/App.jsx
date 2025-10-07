@@ -7,38 +7,29 @@ import redFirefighter from './assets/svg/RedFirefighters.svg'
 import sdhLogo from "./assets/pictures/ZnakSDHSedleccropped.png"
 import instagram from "./assets/svg/ig-instagram-icon.svg"
 import facebook from "./assets/svg/facebook-square-icon.svg"
+
+import './components/Header.css'
+import Header from './components/Header.jsx'
 // import tiktok from "./assets/svg/tiktok.svg"
 
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+// import Clenove from './pages/Clenove'
+// import Kronika from './pages/Kronika'
+// import Login from './pages/Login'
+// import Materialy from './pages/Materialy'
+
+
 // Přidej Material Symbols font do index.html nebo použij CDN v <head>:
-// <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
 function App() {
-  const [menuActive, setMenuActive] = useState(false);
   const [firetruckClicked, setFiretruckClicked] = useState(false);
   const [redPplClicked, setRedPplClicked] = useState(false);
   const [bluePplClicked, setBluePplClicked] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuActive(!menuActive);
-  };
 
   return (
     <>
-      <header className="main-header">
-        <div className="logo-container">
-          <img src={sdhLogo} alt="Logo" className="header-logo" />
-        </div>
-        <button className="menu-toggle" onClick={toggleMenu}>
-          ☰
-        </button>
-        <nav className={`nav-menu ${menuActive ? 'active' : ''}`}>
-          <a href="#home" className="nav-link" id="activeCard">Domů</a>
-          <a href="#about" className="nav-link">Materiály</a>
-          <a href="#contact" className="nav-link">Členové</a>
-          <a href="#contact" className="nav-link">Kronika</a>
-          <a href="#login" className="nav-link login-link">Login</a>
-        </nav>
-      </header>
+      <Header />
       <main>
         <section className="section-white">
           <h1>O SDH Sedlec</h1>
@@ -170,5 +161,6 @@ function App() {
     </>
   )
 }
+
 
 export default App
