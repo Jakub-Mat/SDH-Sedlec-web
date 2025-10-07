@@ -153,23 +153,7 @@ main {
 
 
 @media (max-width: 800px) {
-  /* Zmenšení zápatí */
-  .footer-content {
-    flex-direction: column; /* Vertikální uspořádání */
-    align-items: center; /* Centrování obsahu */
-    font-size: 1.rem; /* Zmenšení velikosti písma */
-  }
 
-  .footer-section {
-    margin: 0; /* Zvýšení mezery mezi sekcemi */
-    text-align: center; /* Centrovaný text */
-  }
-
-  .footer-section h3 {
-    font-size: 1.2rem; /* Zmenšení velikosti nadpisů */
-    margin: 0 0 8px 0;
-    padding: 0;
-  }
 
   .additional-dropdown {
     font-size: 12px;

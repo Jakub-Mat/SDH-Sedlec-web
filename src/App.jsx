@@ -1,16 +1,16 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import React from 'react';
 import './App.css'
 import redFiretruck from './assets/svg/RedFiretruck.svg'
 import blueDiversity from './assets/svg/BlueDiversity.svg'
 import redFirefighter from './assets/svg/RedFirefighters.svg'
-import sdhLogo from "./assets/pictures/ZnakSDHSedleccropped.png"
-import instagram from "./assets/svg/ig-instagram-icon.svg"
-import facebook from "./assets/svg/facebook-square-icon.svg"
+
 
 import './components/Header.css'
 import Header from './components/Header.jsx'
-// import tiktok from "./assets/svg/tiktok.svg"
+import './components/Footer.css'
+import Footer from './components/Footer.jsx'
+
 
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 // import Clenove from './pages/Clenove'
@@ -121,43 +121,7 @@ function App() {
           ></iframe>
         </section>
       </main>
-      <footer className="footer">
-        <div className="footer-content">
-          <div className="footer-section">
-            <h3>Kde nás sledovat?</h3>
-            <div className="social-icons">
-              <a href="https://www.facebook.com" className="social-icon">
-                <img src={facebook} alt="Facebook" className="social-icon-img" />
-              </a>
-              <a href="https://www.instagram.com" className="social-icon">
-                <img src={instagram} alt="Instagram" className="social-icon-img" />
-              </a>
-              <a href="#" className="social-icon">🎵</a> {/* TikTok ikona může být přidána později */}
-            </div>
-          </div>
-          <div className="footer-section">
-            <h3>Adresa:</h3>
-            <p>SHČMS - SDH Sedlec</p>
-            <p>Tymákovská 239</p>
-            <p>332 02 Sedlec</p>
-          </div>
-          <div className="footer-section">
-            <h3>E-mail:</h3>
-            <p>info@hasicisedlec.cz</p>
-            <p>topOddil@hasicisedlec.cz</p>
-          </div>
-          <div className="footer-section">
-            <h3>IČO:</h3>
-            <p>12431534713</p>
-          </div>
-          <div className="footer-section">
-            <h3>Telefon:</h3>
-            <p>155 158 150</p>
-            <p>757 344 971</p>
-            <p>279 974 634</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   )
 }

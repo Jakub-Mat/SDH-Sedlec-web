@@ -59,36 +59,8 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.footer {
-  background: #990000;
-  color: #fff;
-  /* padding: 32px 16px; */
-  text-align: center;
-}
 
-.footer-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 16px;
-}
 
-.footer-section {
-  flex: 1;
-  min-width: 100px;
-  margin-bottom: 15px;
-}
-
-.footer-section h3 {
-  font-size: 1.0rem;
-  margin-bottom: 4px;
-  text-decoration: underline;
-}
-
-.footer-section p {
-  margin: 0;
-  font-size: 0.8rem;
-}
 
 .social-icons {
   display: flex;
