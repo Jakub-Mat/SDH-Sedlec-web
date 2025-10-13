@@ -13,9 +13,6 @@ import Login from './pages/Login.jsx'
 import Materialy from './pages/Materialy.jsx'
 import Home from './pages/Home.jsx'
 
-
-// Přidej Material Symbols font do index.html nebo použij CDN v <head>:
-
 function App() {
   return (
     <BrowserRouter>
@@ -33,6 +30,5 @@ function App() {
     </BrowserRouter>
   )
 }
-
 
 export default App

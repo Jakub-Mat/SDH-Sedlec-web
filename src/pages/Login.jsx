@@ -22,11 +22,11 @@ const Login = () => {
 
     return (
         <div style={{ maxWidth: 400, margin: '40px auto', padding: 24, border: '1px solid #ccc', borderRadius: 8 }}>
-            <h2>Login</h2>
+            <h2>Přihlášení</h2>
             <form onSubmit={handleSubmit}>
                 <div style={{ marginBottom: 16 }}>
                     <label>
-                        Username:
+                        Uživatelské jméno:
                         <input
                             type="text"
                             name="username"
@@ -39,7 +39,7 @@ const Login = () => {
                 </div>
                 <div style={{ marginBottom: 16 }}>
                     <label>
-                        Password:
+                        Heslo:
                         <input
                             type="password"
                             name="password"
