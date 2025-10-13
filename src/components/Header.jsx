@@ -1,6 +1,6 @@
-import React, { useState }  from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import sdhLogo from "../assets/pictures/ZnakSDHSedleccropped.png"
+import sdhLogo from "../assets/pictures/ZnakSDHSedleccropped.png";
 import './Header.css';
 
 const Header = () => {
@@ -19,13 +19,14 @@ const Header = () => {
                 ☰
             </button>
             <nav className={`nav-menu ${menuActive ? 'active' : ''}`}>
-                <a href="#home" className="nav-link" id="activeCard">Domů</a>
-                <a href="#about" className="nav-link">Materiály</a>
-                <a href="#contact" className="nav-link">Členové</a>
-                <a href="#contact" className="nav-link">Kronika</a>
-                <a href="#login" className="nav-link login-link">Login</a>
+                <Link to="/" className="nav-link" id="activeCard">Domů</Link>
+                <Link to="/materialy" className="nav-link">Materiály</Link>
+                <Link to="/clenove" className="nav-link">Členové</Link>
+                <Link to="/kronika" className="nav-link">Kronika</Link>
+                <Link to="/login" className="nav-link login-link">Login</Link>
             </nav>
         </header>
-    )
-}
+    );
+};
+
 export default Header;

@@ -1,0 +1,188 @@
+body {
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  color: #111;
+  display: flex; /* Změněno na flexbox */
+  flex-direction: column;
+  align-items: stretch; /* Zajištění, že obsah zabírá celou šířku */
+  width: 100%; /* Přidáno pro celou šířku */
+  min-height: 100vh; /* Zajištění, že tělo zabírá celou výšku okna */
+} 
+
+
+#root {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #111;
+  width: 100%; /* Přidáno pro celou šířku */
+  max-width: none; /* Zrušení omezení maximální šířky */
+}
+
+main {
+  display: flex; /* Změněno na flexbox */
+  flex-direction: column; /* Uspořádání obsahu vertikálně */
+  align-items: center; /* Horizontální centrování */
+  justify-content: center; /* Vertikální centrování */
+  min-height: 100vh; /* Zajištění, že main zabírá celou výšku okna */
+}
+
+
+
+
+
+
+
+.additional-dropdown {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  max-width: 300px;
+  min-width: 150px;
+  padding: 16px;
+  margin-top: 8px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+  color: #333;
+  opacity: 0; /* Výchozí stav: neviditelné */
+  transform: translateY(-20px); /* Posun nahoru */
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out; /* Animace průhlednosti a pohybu */
+}
+
+.additional-dropdown.closed {
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  opacity: 0; /* Neviditelné */
+  transform: translateY(-5px); /* Posun nahoru */
+}
+
+.additional-dropdown.open {
+  opacity: 1; /* Viditelné */
+  transform: translateY(0); /* Návrat na původní pozici */
+}
+
+.additional-dropdown p {
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+
+.additional-dropdown a {
+  margin: 0 0 8px 0;
+  padding: 0;
+  color: #1976d2;
+}
+
+.sdh-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.sdh-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 120px;
+}
+
+.sdh-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 8px;
+}
+
+.sdh-icon:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.sdh-icon.red {
+  color: #b30000;
+}
+
+.sdh-icon.blue {
+  color: #1976d2;
+}
+
+.sdh-stat-label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #222;
+  margin-top: 4px;
+}
+
+.sdh-divider {
+  width: 2px;
+  height: 60px;
+  background: #ddd;
+  margin: 0 16px;
+}
+
+.calendar-iframe{
+  width: 1200px;
+  height: 800px;
+  max-width: 100%;
+  max-height: 100vh;
+  min-width: max-content;
+  min-height: fit-content;
+  border: none;
+  margin-top: 16px;
+  margin-bottom: 32px;
+  scroll-behavior: unset;
+}
+
+.social-icon-img {
+  width: 32px; /* Nastavení velikosti ikony */
+  height: 32px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icon-img:hover {
+  transform: scale(1.2); /* Zvýraznění při najetí myší */
+}
+/* Responsibilní část */
+/* Styly k media header se nacházejí v header.css */
+
+
+
+@media (max-width: 800px) {
+
+
+  .additional-dropdown {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .sdh-stats{
+    gap: 8px; /* Mezera mezi položkami */
+  }
+
+  #extra.sdh-divider {
+    display: none; /* Skrytí dělící čáry */
+  }
+
+}
+
+@media (max-width: 600px) {
+  .sdh-stats {
+    flex-direction: column; /* Vertikální uspořádání */
+    gap: 16px; /* Mezera mezi položkami */
+  }
+
+  .sdh-divider {
+    display: none; /* Skrytí dělící čáry */
+  }
+
+  .calendar-iframe {
+    width: 100%; /* Plná šířka */
+    height: 600px; /* Výška přizpůsobená menším obrazovkám */
+  }  
+
+}
