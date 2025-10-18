@@ -1,0 +1,54 @@
+.materialy-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.materialy-table-container {
+    max-height: 300px; /* Nastav maximální výšku kontejneru */
+    overflow-y: auto; /* Přidá vertikální scrollbar, pokud obsah přesáhne výšku */
+    border: 2px solid #990000; /* Zvýrazněný rámeček kolem tabulky */
+    border-radius: 8px; /* Zaoblené rohy */
+    padding: 16px; /* Zvýšení paddingu uvnitř kontejneru */
+    background-color: #f9f9f9;
+    margin: 50px auto; /* Zvýšení odsazení shora i zdola */
+    max-width: 600px; /* Zmenšení šířky tabulky */
+    flex: 1; /* Obsah se roztáhne, aby vyplnil prostor mezi headerem a footerem */
+}
+
+.materialy-table {
+    width: 100%; /* Tabulka se přizpůsobí šířce kontejneru */
+    border-collapse: collapse;
+    text-align: center; /* Zarovnání textu na střed */
+    font-size: 1.1rem; /* Zvýšení velikosti písma */
+}
+
+.materialy-table th {
+    background-color: #990000;
+    color: #fff;
+    text-align: center; /* Zarovnání textu na střed */
+    padding: 12px; /* Zvýšení paddingu v záhlaví tabulky */
+    font-size: 1.2rem; /* Zvýšení velikosti písma v záhlaví */
+    border-bottom: 2px solid #b30000; /* Rámeček pod záhlavím tabulky */
+}
+
+.materialy-table td {
+    padding: 12px; /* Zvýšení paddingu v buňkách tabulky */
+    border-bottom: 1px solid #ddd;
+}
+
+.materialy-table a {
+    text-decoration: none;
+    color: #990000;
+    font-weight: bold;
+}
+
+.materialy-table a:hover {
+    text-decoration: underline;
+    color: #b30000;
+}

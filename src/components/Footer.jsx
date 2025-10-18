@@ -12,10 +12,10 @@ const Footer = () => {
                 <div className="footer-section">
                     <h3>Kde nás sledovat?</h3>
                     <div className="social-icons">
-                        <a href="https://www.facebook.com" className="social-icon">
+                        <a href="https://www.facebook.com/people/SDH-Sedlec/100064594453373/?sk=about" className="social-icon" target='_blank'>
                             <img src={facebook} alt="Facebook" className="social-icon-img" />
                         </a>
-                        <a href="https://www.instagram.com" className="social-icon">
+                        <a href="https://www.instagram.com/sdh_sedlec/#" className="social-icon" target='_blank'>
                             <img src={instagram} alt="Instagram" className="social-icon-img" />
                         </a>
                         <a href="#" className="social-icon">🎵</a> {/* TikTok ikona může být přidána později */}
