@@ -1,0 +1,41 @@
+.clenove-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Zvýšení odsazení mezi profily */
+    margin-top: 20px;
+    margin-left: 15vw; /* Odsazení zleva */
+    margin-right: 15vw; /* Odsazení zprava */
+}
+
+.profil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 250px; /* Zvětšení šířky profilu */
+}
+
+.profil-foto {
+    width: 150px; /* Zvětšení velikosti samotné fotky */
+    height: 150px;
+    border-radius: 50%; /* Kruhový tvar */
+    background-color: #ccc; /* Barva pozadí */
+    padding: 10px; /* Větší vnitřní odsazení, aby byla vidět barva pozadí */
+    box-sizing: border-box; /* Zahrnutí paddingu do celkové velikosti */
+    margin-bottom: 15px;
+    object-fit: cover; /* Zajištění správného zobrazení fotky bez deformace */
+}
+
+.profil-role {
+    min-width: 200px; /* Zvětšení minimální šířky textu pod fotkou */
+    background-color: #f9f9f9; /* Světlejší barva pozadí pod textem */
+    color: #000; /* Změna barvy textu na černou */
+    padding: 10px 15px; /* Větší padding pro lepší čitelnost */
+    border-radius: 5px;
+    font-size: 1.1rem; /* Zvětšení velikosti písma */
+    font-weight: bold;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Jemný stín pro zvýraznění */
+    line-height: 1.5; /* Zvýšení výšky řádku pro lepší čitelnost */
+    text-align: center; /* Zarovnání textu na střed */
+}
