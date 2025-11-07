@@ -16,7 +16,7 @@ import Home from './pages/Home.jsx'
 function App() {
   return (
     <BrowserRouter>
-      <>
+      <div className="app">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -26,7 +26,7 @@ function App() {
           <Route path="/login" element={<Login />} />
         </Routes>
         <Footer />
-      </>
+      </div>
     </BrowserRouter>
   )
 }

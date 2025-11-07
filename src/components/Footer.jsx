@@ -12,10 +12,10 @@ const Footer = () => {
                 <div className="footer-section">
                     <h3>Kde nás sledovat?</h3>
                     <div className="social-icons">
-                        <a href="https://www.facebook.com/people/SDH-Sedlec/100064594453373/?sk=about" className="social-icon" target='_blank'>
+                        <a href="https://www.facebook.com/people/SDH-Sedlec/100064594453373/?sk=about" className="social-icon" target='_blank' rel="noreferrer">
                             <img src={facebook} alt="Facebook" className="social-icon-img" />
                         </a>
-                        <a href="https://www.instagram.com/sdh_sedlec/#" className="social-icon" target='_blank'>
+                        <a href="https://www.instagram.com/sdh_sedlec/#" className="social-icon" target='_blank' rel="noreferrer">
                             <img src={instagram} alt="Instagram" className="social-icon-img" />
                         </a>
                         <a href="#" className="social-icon">🎵</a> {/* TikTok ikona může být přidána později */}
@@ -23,24 +23,24 @@ const Footer = () => {
                 </div>
                 <div className="footer-section">
                     <h3>Adresa:</h3>
-                    <p>SHČMS - SDH Sedlec</p>
-                    <p>Tymákovská 239</p>
-                    <p>332 02 Sedlec</p>
+                    <span>SHČMS - SDH Sedlec</span>
+                    <span>Tymákovská 239</span>
+                    <span>332 02 Sedlec</span>
                 </div>
                 <div className="footer-section">
                     <h3>E-mail:</h3>
-                    <p>info@hasicisedlec.cz</p>
-                    <p>topOddil@hasicisedlec.cz</p>
+                    <span>info@hasicisedlec.cz</span>
+                    <span>topOddil@hasicisedlec.cz</span>
                 </div>
                 <div className="footer-section">
                     <h3>IČO:</h3>
-                    <p>12431534713</p>
+                    <span>12431534713</span>
                 </div>
                 <div className="footer-section">
                     <h3>Telefon:</h3>
-                    <p>155 158 150</p>
-                    <p>757 344 971</p>
-                    <p>279 974 634</p>
+                    <span>155 158 150</span>
+                    <span>757 344 971</span>
+                    <span>279 974 634</span>
                 </div>
             </div>
         </footer>

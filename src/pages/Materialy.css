@@ -9,16 +9,31 @@
     text-align: center;
 }
 
+.materialy {
+    display: block;
+    justify-content: center; /* Toto nemá vliv na zarovnání, protože není flexbox */
+    max-width: 800px; /* Nastavení maximální šířky */
+    margin: 0 auto; /* Centrovaní divu horizontálně */
+}
+
+#tableTitle {
+    color: #fff;
+    background-color: #990000;
+    font-size: 1.2rem;
+    padding: 16px;
+    margin: 0;
+    border-radius: 8px 8px 0 0; /* Zaoblené rohy nahoře */
+}
+
 .materialy-table-container {
     max-height: 300px; /* Nastav maximální výšku kontejneru */
     overflow-y: auto; /* Přidá vertikální scrollbar, pokud obsah přesáhne výšku */
     border: 2px solid #990000; /* Zvýrazněný rámeček kolem tabulky */
-    border-radius: 8px; /* Zaoblené rohy */
+    border-radius: 0 0 8px 8px; /* Zaoblené rohy */
     padding: 16px; /* Zvýšení paddingu uvnitř kontejneru */
-    background-color: #f9f9f9;
-    margin: 50px auto; /* Zvýšení odsazení shora i zdola */
+    background-color: transparent; /* Transparentní pozadí */
+    margin: 0 auto; /* Centrovaný kontejner */
     max-width: 600px; /* Zmenšení šířky tabulky */
-    flex: 1; /* Obsah se roztáhne, aby vyplnil prostor mezi headerem a footerem */
 }
 
 .materialy-table {

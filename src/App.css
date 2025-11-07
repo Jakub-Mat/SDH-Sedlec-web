@@ -1,0 +1,6 @@
+.app {
+    background-color: #f8f6edf0;
+    min-height: 100vh; /* Zajištění, že obsah pokryje celé okno */
+    display: flex;
+    flex-direction: column; /* Uspořádání obsahu vertikálně */
+}

@@ -1,13 +1,15 @@
 import React from "react";
-import profilFoto from '../assets/pictures/niceFace.jpg';
+import profilFoto from '../assets/pictures/niceFace-removebg.png';
 import profilFoto2 from '../assets/pictures/profilePic.jpg';
+import blueDiversity from '../assets/svg/BlueDiversity.svg';
+import redFirefighter from '../assets/svg/RedFirefighters.svg';
 import "./Clenove.css";
 
 const Clenove = () => {
     return (
         <main>
             <h1>Koho potkáte při tréninku</h1>
-            <h2>Členové týmu</h2>
+            <h2>Členové SDH Sedlec</h2>
             <div className="clenove-container">
                 {/* Profil 1 */}
                 <div className="profil">
@@ -18,8 +20,6 @@ const Clenove = () => {
                         style={{ backgroundColor: "#590A0A" }}
                     />
                     <p className="profil-role">
-                        Vedoucí hasičů: 
-                        <br />
                         Stanislav Pokštefl
                     </p>
                 </div>
@@ -33,8 +33,6 @@ const Clenove = () => {
                         style={{ backgroundColor: "#84B1D9" }}
                     />
                     <p className="profil-role">
-                        Vedoucí hasičů: 
-                        <br />
                         Josef Sistek
                     </p>
                 </div>
@@ -48,8 +46,6 @@ const Clenove = () => {
                         style={{ backgroundColor: "#D0B229" }}
                     />
                     <p className="profil-role">
-                        Autor stránky: 
-                        <br />
                         Jakub Matas
                     </p>
                 </div>
@@ -63,8 +59,6 @@ const Clenove = () => {
                         style={{ backgroundColor: "#7A4D8B" }}
                     />
                     <p className="profil-role">
-                        Články vytvořil: 
-                        <br />
                         Jakub Matas
                     </p>
                 </div>
@@ -78,9 +72,7 @@ const Clenove = () => {
                         style={{ backgroundColor: "#97A483" }}
                     />
                     <p className="profil-role">
-                        Dodal zdroje: 
-                        <br />
-                        Jakub Matas
+                        Chlebák12
                     </p>
                 </div>
 
@@ -93,8 +85,6 @@ const Clenove = () => {
                         style={{ backgroundColor: "#1E9896" }}
                     />
                     <p className="profil-role">
-                        Trenér: 
-                        <br />
                         Radek Matas
                     </p>
                 </div>
@@ -107,9 +97,7 @@ const Clenove = () => {
                         style={{ backgroundColor: "#2C4001" }}
                     />
                     <p className="profil-role">
-                        Trenér: 
-                        <br />
-                        Radek Matas
+                        Vit Matas 
                     </p>
                 </div>
                 {/* Profil 8 */}
@@ -121,13 +109,35 @@ const Clenove = () => {
                         style={{ backgroundColor: "#990000" }}
                     />
                     <p className="profil-role">
-                        Trenér: 
-                        <br />
-                        Radek Matas
+                        Ségra Vítka
                     </p>
                 </div>
             </div>
             <p>Tohle samozřejmě nejsou všichni, ale věřím, že už teď se těšíte až potkáte ostatní!</p>
+
+            <section className="info-section">
+                <div>
+                            <img src={redFirefighter} alt="ikona hasiči" className="info-icon" />
+                </div>
+                <h1>
+                    15 Členů Jednotky
+                </h1>
+                <p className="info-text">
+                        Členové hasičské dobrovolné jednotky jsou opravdoví hrdinové, kteří denně prokazují svou odvahu, obětavost a odhodlání. Bez jejich neúnavné práce by naše komunity nemohly být tak bezpečné, jak jsou. Tito lidé riskují své životy, aby zachránili majetek a, především, lidské životy. Je obdivuhodné, jak se dokážou postavit nebezpečným situacím, ať už jde o požáry, povodně nebo jiné krizové momenty.
+                </p>
+            </section>
+            
+            <section className="info-section" id="blueSection">
+                <div>
+                    <img src={blueDiversity} alt="ikona mladí hasiči" className="info-icon" />
+                </div>
+                <h1 style={{ color: "#084B8A" }}>
+                    20 a více Mladých hasičů
+                </h1>
+                <p className="info-text">
+                        Mladí hasiči jsou inspirující příklad zapálení a odhodlání. Je úžasné vidět, jak se s nadšením věnují tréninkům, neustále se snaží zlepšovat a rozvíjet své dovednosti. I když jsou mladí, již teď prokazují velkou zodpovědnost a týmového ducha, což je základem jejich silného kolektivu. Každý trénink je pro ně příležitostí učit se nové věci a připravovat se na situace, které mohou nastat.
+                </p>
+            </section>
         </main>
     );
 };

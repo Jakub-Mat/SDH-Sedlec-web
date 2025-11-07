@@ -10,7 +10,6 @@ body {
   min-height: 100vh; /* Zajištění, že tělo zabírá celou výšku okna */
 } 
 
-
 #root {
   margin: 0;
   padding: 0;
@@ -28,59 +27,56 @@ main {
   min-height: 100vh; /* Zajištění, že main zabírá celou výšku okna */
 }
 
-
-
-
-
-
-
 .additional-dropdown {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
   background-color: #f5f5f5;
   border: 1px solid #ddd;
-  max-width: 300px;
-  min-width: 150px;
-  padding: 16px;
-  margin-top: 8px;
+  max-width: 400px;
+  width: 90%;
+  padding: 24px;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  font-size: 0.9rem;
-  color: #333;
-  opacity: 0; /* Výchozí stav: neviditelné */
-  transform: translateY(-20px); /* Posun nahoru */
-  transition: opacity 0.4s ease-out, transform 0.4s ease-out; /* Animace průhlednosti a pohybu */
-}
-
-.additional-dropdown.closed {
-  width: 0;
-  height: 0;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  opacity: 0; /* Neviditelné */
-  transform: translateY(-5px); /* Posun nahoru */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  z-index: -1;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 .additional-dropdown.open {
-  opacity: 1; /* Viditelné */
-  transform: translateY(0); /* Návrat na původní pozici */
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 1000;
+}
+
+.additional-dropdown.closed {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, -50%) scale(0.9);
+  z-index: -1;
 }
 
 .additional-dropdown p {
-  margin: 0 0 8px 0;
+  margin: 0 0 12px 0;
   padding: 0;
 }
 
 .additional-dropdown a {
-  margin: 0 0 8px 0;
-  padding: 0;
   color: #1976d2;
+  text-decoration: none;
+}
+
+.additional-dropdown a:hover {
+  text-decoration: underline;
 }
 
 .sdh-stats {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 32px;
   margin-top: 32px;
   margin-bottom: 16px;
 }
@@ -130,59 +126,70 @@ main {
   height: 800px;
   max-width: 100%;
   max-height: 100vh;
-  min-width: max-content;
-  min-height: fit-content;
   border: none;
   margin-top: 16px;
   margin-bottom: 32px;
-  scroll-behavior: unset;
 }
 
 .social-icon-img {
-  width: 32px; /* Nastavení velikosti ikony */
+  width: 32px;
   height: 32px;
   transition: transform 0.2s ease-in-out;
 }
 
 .social-icon-img:hover {
-  transform: scale(1.2); /* Zvýraznění při najetí myší */
+  transform: scale(1.2);
 }
-/* Responsibilní část */
-/* Styly k media header se nacházejí v header.css */
-
-
 
 @media (max-width: 800px) {
-
-
   .additional-dropdown {
     font-size: 12px;
     margin: 0;
   }
 
   .sdh-stats{
-    gap: 8px; /* Mezera mezi položkami */
+    gap: 8px;
   }
 
   #extra.sdh-divider {
-    display: none; /* Skrytí dělící čáry */
+    display: none;
   }
-
 }
 
 @media (max-width: 600px) {
   .sdh-stats {
-    flex-direction: column; /* Vertikální uspořádání */
-    gap: 16px; /* Mezera mezi položkami */
+    flex-direction: column;
+    gap: 16px;
   }
 
   .sdh-divider {
-    display: none; /* Skrytí dělící čáry */
+    display: none;
   }
 
   .calendar-iframe {
-    width: 100%; /* Plná šířka */
-    height: 600px; /* Výška přizpůsobená menším obrazovkám */
+    width: 100%;
+    height: 600px;
   }  
+}
 
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  z-index: 999;
+  pointer-events: none;
+}
+
+body.popup-open::before {
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }

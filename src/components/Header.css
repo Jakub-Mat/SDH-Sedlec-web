@@ -46,6 +46,9 @@
     justify-content: right;
     gap: 24px;
     width: 100%; /* Přidáno pro roztažení přes celý header */
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
   }
 
   .nav-link {

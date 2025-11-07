@@ -3,6 +3,7 @@
   color: #fff;
   /* padding: 32px 16px; */
   text-align: center;
+  margin-top: auto; /* Zajištění, že footer se posune na konec stránky */
 }
 
 .footer-content {
@@ -24,7 +25,7 @@
   text-decoration: underline;
 }
 
-.footer-section p {
+.footer-section span {
   margin: 0;
   font-size: 0.8rem;
 }

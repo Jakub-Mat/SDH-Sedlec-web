@@ -19,9 +19,7 @@
 .profil-foto {
     width: 150px; /* Zvětšení velikosti samotné fotky */
     height: 150px;
-    border-radius: 50%; /* Kruhový tvar */
-    background-color: #ccc; /* Barva pozadí */
-    padding: 10px; /* Větší vnitřní odsazení, aby byla vidět barva pozadí */
+    border-radius: 50%; /* Zaoblení fotky do kruhu */
     box-sizing: border-box; /* Zahrnutí paddingu do celkové velikosti */
     margin-bottom: 15px;
     object-fit: cover; /* Zajištění správného zobrazení fotky bez deformace */
@@ -29,13 +27,35 @@
 
 .profil-role {
     min-width: 200px; /* Zvětšení minimální šířky textu pod fotkou */
-    background-color: #f9f9f9; /* Světlejší barva pozadí pod textem */
-    color: #000; /* Změna barvy textu na černou */
+    background-color: transparent; /* Světlejší barva pozadí pod textem */
+    color: #990000; /* Změna barvy textu na černou */
     padding: 10px 15px; /* Větší padding pro lepší čitelnost */
     border-radius: 5px;
     font-size: 1.1rem; /* Zvětšení velikosti písma */
     font-weight: bold;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Jemný stín pro zvýraznění */
     line-height: 1.5; /* Zvýšení výšky řádku pro lepší čitelnost */
     text-align: center; /* Zarovnání textu na střed */
+}
+
+.info-icon{
+    width: 6vw;
+    height: 6vw;
+}
+
+.info-section{
+   display: block;
+   margin-bottom: 10px;
+}
+
+#blueSection{
+    margin-bottom: 50px;
+}
+
+.info-text{
+    max-width: 800;
+    margin-top: 0 auto;
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.4;
+    text-align: justify;
 }
