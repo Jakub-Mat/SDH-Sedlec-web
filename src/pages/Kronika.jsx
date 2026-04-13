@@ -4,7 +4,7 @@ const Kronika = () => {
   return (
     <div>
       <h1>Kronika</h1>
-      <p>Witaj w Kronice!</p>
+      <p>Stránka je stále ve vývoji.</p>
     </div>
   );
 };

@@ -27,7 +27,7 @@ const Clenove = () => {
                 {/* Profil 2 */}
                 <div className="profil">
                     <img
-                        src={profilFoto2}
+                        src={profilFoto}
                         alt="Josef Sistek"
                         className="profil-foto"
                         style={{ backgroundColor: "#84B1D9" }}
@@ -72,7 +72,7 @@ const Clenove = () => {
                         style={{ backgroundColor: "#97A483" }}
                     />
                     <p className="profil-role">
-                        Chlebák12
+                        Jakub Matas
                     </p>
                 </div>
 
@@ -85,31 +85,7 @@ const Clenove = () => {
                         style={{ backgroundColor: "#1E9896" }}
                     />
                     <p className="profil-role">
-                        Radek Matas
-                    </p>
-                </div>
-                {/* Profil 7 */}
-                <div className="profil">
-                    <img
-                        src={profilFoto}
-                        alt="Radek Matas"
-                        className="profil-foto"
-                        style={{ backgroundColor: "#2C4001" }}
-                    />
-                    <p className="profil-role">
-                        Vit Matas 
-                    </p>
-                </div>
-                {/* Profil 8 */}
-                <div className="profil">
-                    <img
-                        src={profilFoto}
-                        alt="Radek Matas"
-                        className="profil-foto"
-                        style={{ backgroundColor: "#990000" }}
-                    />
-                    <p className="profil-role">
-                        Ségra Vítka
+                        Jakub Matas
                     </p>
                 </div>
             </div>
